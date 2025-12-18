@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Table, Button, Modal, Form, Alert } from 'react-bootstrap';
-import { factoryAPI } from '../services/api';
+import { factoryAPI } from '../../../services/api';
 
 const ProduktiList = () => {
   const [produktet, setProduktet] = useState([]);

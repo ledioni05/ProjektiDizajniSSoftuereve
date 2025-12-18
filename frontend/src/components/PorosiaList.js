@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Table, Button, Modal, Form, Alert, Badge, InputGroup } from 'react-bootstrap';
-import { orderAPI, factoryAPI } from '../services/api';
+import { orderAPI, factoryAPI } from '../../../services/api';
 
 const PorosiaList = () => {
   const [porosite, setPorosite] = useState([]);
