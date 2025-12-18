@@ -1,0 +1,26 @@
+{
+  "name": "plus-metal-system",
+  "version": "1.0.0",
+  "description": "Plus Metal Management System - Full-stack microservices application",
+  "scripts": {
+    "install-all": "npm install && cd api-gateway && npm install && cd ../services/factory-service && npm install && cd ../order-service && npm install && cd ../inventory-service && npm install && cd ../financial-service && npm install && cd ../delivery-service && npm install && cd ../report-service && npm install && cd ../../frontend && npm install",
+    "start:gateway": "cd api-gateway && npm start",
+    "start:factory": "cd services/factory-service && npm start",
+    "start:order": "cd services/order-service && npm start",
+    "start:inventory": "cd services/inventory-service && npm start",
+    "start:financial": "cd services/financial-service && npm start",
+    "start:delivery": "cd services/delivery-service && npm start",
+    "start:report": "cd services/report-service && npm start",
+    "start:frontend": "cd frontend && npm start"
+  },
+  "keywords": [
+    "microservices",
+    "react",
+    "express",
+    "nodejs",
+    "plus-metal"
+  ],
+  "author": "",
+  "license": "ISC"
+}
+
