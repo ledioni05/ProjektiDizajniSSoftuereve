@@ -15,7 +15,7 @@ app.use(express.json());
 let data = {
   klientet: [
     { id: 1, emri: 'Bau Market', email: 'baumarket@gmail.com', telefoni: '+383 45 111 222', adresa: 'Prishtinë' },
-    { id: 2, emri: 'SABA-Group', email: 'sabagroup@gmail.com', telefoni: '+355 45 222 333', adresa: 'Gjilan' }
+    { id: 2, emri: 'SABA-Group', email: 'sabagroup@gmail.com', telefoni: '+355 45 222 333', adresa: 'Gjilan' },
     { id: 2, emri: 'CTA', email: 'cta@gmail.com', telefoni: '+383 45 333 444', adresa: 'Pejë' }
   ],
   porosite: [
