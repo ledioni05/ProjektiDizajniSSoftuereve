@@ -12,11 +12,11 @@ app.use(express.json());
 
 let data = {
   fabrikat: [
-    { id: 1, emri: 'Fabrika Kryesore', adresa: 'Tirana, Albania', kapaciteti: 1000 }
+    { id: 1, emri: 'Plus Metal-1', adresa: 'Ferizaj, Kosove', kapaciteti: 1000 }
   ],
   produktet: [
-    { id: 1, emri: 'Pllakë Çeliku', tipi: 'Çelik', cmimi: 150, fabrikaId: 1 },
-    { id: 2, emri: 'Trarë Alumini', tipi: 'Alumini', cmimi: 200, fabrikaId: 1 }
+    { id: 1, emri: 'Kaseta Metalike', tipi: 'Llamarin', cmimi: 50, fabrikaId: 1 },
+    { id: 2, emri: 'Hidranti', tipi: 'LLamarin', cmimi: 30, fabrikaId: 1 }
   ],
   punetoret: [
     { id: 1, emri: 'Punëtori 1', pozicioni: 'Operator', fabrikaId: 1, paga: 50000, dataPunesimit: '2023-01-01' },
