@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, Card, Spinner } from 'react-bootstrap';
-import { factoryAPI, orderAPI, inventoryAPI, financialAPI, deliveryAPI } from '../../../services/api';
+import { factoryAPI, orderAPI, inventoryAPI, financialAPI, deliveryAPI } from '../services/api';
 import './Dashboard.css';
 
 const Dashboard = () => {
