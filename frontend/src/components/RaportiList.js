@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Table, Button, Modal, Form, Alert } from 'react-bootstrap';
-import { reportAPI } from '../../../services/api';
+import { reportAPI } from '../services/api';
 
 const RaportiList = () => {
   const [raportet, setRaportet] = useState([]);

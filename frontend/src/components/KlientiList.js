@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Table, Button, Modal, Form, Alert } from 'react-bootstrap';
-import { orderAPI } from '../../../services/api';
+import { orderAPI } from '../services/api';
 
 const KlientiList = () => {
   const [klientet, setKlientet] = useState([]);

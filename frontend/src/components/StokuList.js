@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Table, Button, Modal, Form, Alert, Badge } from 'react-bootstrap';
-import { inventoryAPI, factoryAPI } from '../../../services/api';
+import { inventoryAPI, factoryAPI } from '../services/api';
 
 const StokuList = () => {
   const [stoku, setStoku] = useState([]);

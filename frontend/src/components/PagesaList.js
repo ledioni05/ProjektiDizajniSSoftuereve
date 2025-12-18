@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Table, Button, Modal, Form, Alert, Badge } from 'react-bootstrap';
-import { financialAPI, orderAPI } from '../../../services/api';
+import { financialAPI, orderAPI } from '../services/api';
 
 const PagesaList = () => {
   const [pagesat, setPagesat] = useState([]);
