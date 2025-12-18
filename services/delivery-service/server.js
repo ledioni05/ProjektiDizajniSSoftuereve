@@ -14,7 +14,7 @@ app.use(express.json());
 
 let data = {
   dergesat: [
-    { id: 1, porosiaId: 1, dataDergeses: '2024-01-17', statusi: 'Në rrugë', adresa: 'Prishtinë', transportuesi: 'Furgon-i mesem' }
+    { id: 1, porosiaId: 1, dataDergeses: '2024-01-17', statusi: 'Në rrugë', adresa: 'Tirana', transportuesi: 'Transport Plus' }
   ]
 };
 
@@ -55,7 +55,7 @@ app.post('/dergesat', async (req, res) => {
     return res.status(400).json({ message: 'PorosiaId është e detyrueshme' });
   }
   
-  
+
   try {
     const orderResponse = await axios.get(`${ORDER_SERVICE_URL}/porosite/${porosiaId}`);
     const porosia = orderResponse.data;
@@ -68,7 +68,7 @@ app.post('/dergesat', async (req, res) => {
       dataDergeses: dataDergeses || new Date().toISOString().split('T')[0],
       statusi: statusi || 'Në përgatitje',
       adresa: adresa || klienti.adresa,
-      transportuesi: transportuesi || 'Furgon-i mesem'
+      transportuesi: transportuesi || 'Transport Plus'
     };
     data.dergesat.push(newDergesa);
     res.status(201).json(newDergesa);

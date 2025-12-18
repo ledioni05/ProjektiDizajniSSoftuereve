@@ -12,8 +12,8 @@ app.use(express.json());
 
 let data = {
   stoku: [
-    { id: 1, produktId: 1, sasia: 5000, minimumi: 200, lokacioni: 'PlusMetal-1' },
-    { id: 2, produktId: 2, sasia: 1500, minimumi: 150, lokacioni: 'PlusMetal-1' }
+    { id: 1, produktId: 1, sasia: 500, minimumi: 50, lokacioni: 'Magazina A' },
+    { id: 2, produktId: 2, sasia: 300, minimumi: 30, lokacioni: 'Magazina B' }
   ]
 };
 
@@ -30,7 +30,7 @@ app.get('/stoku', (req, res) => {
 app.get('/stoku/:id', (req, res) => {
   const stoku = data.stoku.find(s => s.id === parseInt(req.params.id));
   if (!stoku) {
-    return res.status(404).json({ message: 'Nuk ka stok' });
+    return res.status(404).json({ message: 'Stoku nuk u gjet' });
   }
   res.json(stoku);
 });
@@ -38,7 +38,7 @@ app.get('/stoku/:id', (req, res) => {
 app.get('/stoku/produkt/:produktId', (req, res) => {
   const stoku = data.stoku.find(s => s.produktId === parseInt(req.params.produktId));
   if (!stoku) {
-    return res.status(404).json({ message: 'Nuk ka stok per kete produkt' });
+    return res.status(404).json({ message: 'Stoku për këtë produkt nuk u gjet' });
   }
   res.json(stoku);
 });

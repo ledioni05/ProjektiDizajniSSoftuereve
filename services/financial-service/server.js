@@ -14,10 +14,10 @@ app.use(express.json());
 
 let data = {
   pagesat: [
-    { id: 1, porosiaId: 1, shuma: 4000, dataPageses: '2024-01-16', metoda: 'Kartë', statusi: 'E kompletuar' }
+    { id: 1, porosiaId: 1, shuma: 2500, dataPageses: '2024-01-16', metoda: 'Kartë', statusi: 'E kompletuar' }
   ],
   faturat: [
-    { id: 1, porosiaId: 1, numri: 'FAT-001', data: '2024-01-15', totali: 4000, statusi: 'E paguar' }
+    { id: 1, porosiaId: 1, numri: 'FAT-001', data: '2024-01-15', totali: 2500, statusi: 'E paguar' }
   ]
 };
 
@@ -136,7 +136,7 @@ app.post('/faturat', async (req, res) => {
     return res.status(400).json({ message: 'PorosiaId është e detyrueshme' });
   }
   
-  
+
   let totali = 0;
   try {
     const orderResponse = await axios.get(`${ORDER_SERVICE_URL}/porosite/${porosiaId}`);

@@ -14,9 +14,8 @@ app.use(express.json());
 
 let data = {
   klientet: [
-    { id: 1, emri: 'Bau Market', email: 'baumarket@gmail.com', telefoni: '+383 45 111 222', adresa: 'Prishtinë' },
-    { id: 2, emri: 'SABA-Group', email: 'sabagroup@gmail.com', telefoni: '+355 45 222 333', adresa: 'Gjilan' },
-    { id: 2, emri: 'CTA', email: 'cta@gmail.com', telefoni: '+383 45 333 444', adresa: 'Pejë' }
+    { id: 1, emri: 'Klienti 1', email: 'klienti1@example.com', telefoni: '+355 123 456 789', adresa: 'Tirana' },
+    { id: 2, emri: 'Klienti 2', email: 'klienti2@example.com', telefoni: '+355 987 654 321', adresa: 'Durrës' }
   ],
   porosite: [
     { 
@@ -25,10 +24,10 @@ let data = {
       dataPorosise: '2024-01-15', 
       statusi: 'Aktive',
       produktet: [
-        { produktId: 1, sasia: 200, cmimi: 50 },
-        { produktId: 2, sasia: 100, cmimi: 30 }
+        { produktId: 1, sasia: 10, cmimi: 150 },
+        { produktId: 2, sasia: 5, cmimi: 200 }
       ],
-      totali: 4000
+      totali: 2500
     }
   ]
 };
