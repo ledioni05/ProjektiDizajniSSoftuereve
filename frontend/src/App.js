@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
-import Dashboard from './components/Dashboard';
+import Dashboard from './components/dashboard';
 import FabrikaList from './components/FabrikaList';
 import ProduktiList from './components/ProduktiList';
 import PunetoretList from './components/PunetoretList';
